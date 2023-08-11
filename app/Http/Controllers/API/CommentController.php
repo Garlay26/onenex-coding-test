@@ -6,7 +6,7 @@ use App\Models\Comment;
 use App\Models\Movie;
 use Illuminate\Http\Request;
 use Validator;
-use Illuminate\Support\Facades\Cache;
+
 
 class CommentController extends BaseController
 {

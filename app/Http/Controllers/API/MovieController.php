@@ -205,6 +205,7 @@ class MovieController extends BaseController
                 return apiResponse(false, 'Wrong Movie ID!', $request->id, 404);
             }
         } catch (\Exception $e) {
+            // dd($e);
             \DB::rollback();
             return apiResponse(false, "Cannot Update!Please contact to Admin", $e, 500);
         }
